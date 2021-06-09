@@ -7,11 +7,13 @@ public class Intlist{
 		Intlist L = new Intlist();
 		L.first = 5;
 		L.rest = null;
+
 		/**
 		这样的列表很难使用 但是也是可以用的
 		用法是 L.first 设置值 L.rest又是一个Intlist
 		L.rest.first 是下一个值
 		**/
+
 
 		L.rest = new Intlist();
 		L.rest.first = 10;
