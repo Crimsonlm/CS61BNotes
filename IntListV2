@@ -1,0 +1,19 @@
+public class Intlist{
+	public int first;
+	public Intlist rest;
+	
+	//想办法改进之前的Intlist
+	//利用构造器 从后往前构建Intlist
+	public Intlist(int f , Intlist r){
+		first = f;
+		rest = r;
+	}
+	public static void main(String[]args){
+		Intlist L = new Intlist(5,null);
+		//注意 代码是从后向前执行的 所以 第16行执行的意思是
+		//我需要一个新的列表，第一个数字是10，第二个数字是之前的L，并且我
+		//仍然赋值给L
+		L = new Intlist(10,L);
+		L = new Intlist(15,L);
+	}
+}
